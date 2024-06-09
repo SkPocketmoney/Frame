@@ -1,49 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Large Buttons to Open Websites</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .button {
-            width: 300px;
-            height: 100px;
-            font-size: 24px;
-            margin: 20px;
-            cursor: pointer;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Iframe Example</title>
 </head>
 <body>
-    <button class="button" onclick="location.href='https://www.hipi.co.in/@onlybeauty_girl'">ID - 1</button>
-    <button class="button" onclick="location.href='https://www.hipi.co.in/@mhindi445'">ID - 2</button>
-    <button class="button" onclick="initiateProcess()">Login</button>
-
-    <script>
-        // Load the Tampermonkey script here if necessary, or assume it's already loaded
-        function initiateProcess() {
-            if (typeof window.initiateProcess === 'function') {
-                window.initiateProcess();
-            } else {
-                console.error('Tampermonkey script is not loaded or initiateProcess is not defined.');
-            }
-        }
-    </script>
+    <h1>Embedding Bing in an Iframe</h1>
+    <iframe src="https://www.bing.com" width="100%" height="600px">
+        Your browser does not support iframes.
+    </iframe>
 </body>
 </html>
